@@ -58,4 +58,24 @@ class PostTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($draft->isPublished());
         $this->assertEquals($postDateTime, $draft->getPostDateTime());
     }
+
+    /**
+     * @test
+     */
+    public function it_can_retract_a_post()
+    {
+        $draft = Post::draft(
+            new PostTitle('The answer to life, the universe and everything.'),
+            new PostIntroduction('intro to 42'),
+            new PostContent('42')
+        );
+
+        $postDateTime = new DateTimeImmutable('2016-01-13');
+        $draft->publish($postDateTime);
+
+        $draft->retract();
+
+        $this->assertFalse($draft->isPublished());
+        $this->assertEquals(null, $draft->getPostDateTime());
+    }
 }

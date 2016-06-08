@@ -68,6 +68,12 @@ final class Post
         $this->published = true;
     }
 
+    public function retract()
+    {
+        $this->published = false;
+        $this->postDateTime = null;
+    }
+
     /**
      * @return PostId
      */
@@ -109,9 +115,10 @@ final class Post
     }
 
     /**
-     * @return DateTimeImmutable
+     * I can not return type hint for either DateTimeImmutable or NULL :(
+     * @return DateTimeImmutable|null
      */
-    public function getPostDateTime() : DateTimeImmutable
+    public function getPostDateTime()
     {
         return $this->postDateTime;
     }
