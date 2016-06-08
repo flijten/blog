@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 namespace Tests\Unit\Blog\Domain\Model;
 use Blog\Domain\Model\Post;
 use Blog\Domain\Model\PostContent;

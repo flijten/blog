@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 namespace Blog\Domain\Model;
 use Assert\Assertion;
 use Assert\InvalidArgumentException;
@@ -17,7 +17,7 @@ class PostIntroduction
      * @param string $title
      * @throws InvalidArgumentException
      */
-    public function __construct($title)
+    public function __construct(string $title)
     {
         Assertion::notEmpty($title);
         $this->description = $title;
