@@ -6,7 +6,7 @@ use Assert\InvalidArgumentException;
 /**
  * @author Freek Lijten
  */
-class PostContent
+final class PostContent
 {
     /**
      * @var string

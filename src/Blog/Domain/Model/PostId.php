@@ -5,7 +5,7 @@ use Ramsey\Uuid\UuidInterface;
 /**
  * @author Freek Lijten
  */
-class PostId
+final class PostId
 {
     /**
      * @var UuidInterface

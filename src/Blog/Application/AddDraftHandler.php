@@ -10,7 +10,7 @@ use Blog\Domain\Model\PostTitle;
 /**
  * @author Freek Lijten
  */
-class AddDraftHandler
+final class AddDraftHandler
 {
     /**
      * @var PostRepository

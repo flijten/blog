@@ -5,7 +5,7 @@ use DateTimeImmutable;
 /**
  * @author Freek Lijten
  */
-class Slug
+final class Slug
 {
     /**
      * @var DateTimeImmutable

@@ -5,7 +5,7 @@ use Ramsey\Uuid\Uuid;
 /**
  * @author Freek Lijten
  */
-class Post
+final class Post
 {
     /**
      * @var PostId

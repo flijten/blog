@@ -4,7 +4,7 @@ namespace Blog\Application;
 /**
  * @author Freek Lijten
  */
-class AddDraft
+final class AddDraft
 {
     public $title;
     public $introduction;
