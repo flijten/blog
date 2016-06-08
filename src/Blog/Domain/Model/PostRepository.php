@@ -9,5 +9,11 @@ interface PostRepository
     /**
      * @param Post $post
      */
-    public function newDraft(Post $post);
+    public function save(Post $post);
+
+    /**
+     * @param PostId $postId
+     * @return Post
+     */
+    public function byId(PostId $postId) : Post;
 }

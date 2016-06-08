@@ -32,7 +32,7 @@ final class AddDraftHandler
      */
     public function handle(AddDraft $command)
     {
-        $this->postRepository->newDraft(Post::draft(
+        $this->postRepository->save(Post::draft(
             new PostTitle($command->title),
             new PostIntroduction($command->introduction),
             new PostContent($command->content)
