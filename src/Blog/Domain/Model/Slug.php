@@ -27,6 +27,10 @@ final class Slug
         $this->blogTitle = $blogTitle;
     }
 
+    /**
+     * Copied behaviour of old blog
+     * @return string
+     */
     public function asString()
     {
         $title = $this->blogTitle->asString();
