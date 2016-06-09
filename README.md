@@ -5,3 +5,5 @@
 Blog-module separated from any framework. Hopefully able to be used
 in Symfony, Laravel, whatever. Purely here for educational purpose, 
 the educated one being me =)
+
+A blog bundle for symfony that uses this package will be added later.
